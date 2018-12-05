@@ -24,7 +24,7 @@ elif age < 65:
     print ("adult")
     
 elif age < 18:
-    print("teen")
+    print("teen") 
     
 else:
     print ("pensioner")

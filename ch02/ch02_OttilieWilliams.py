@@ -17,9 +17,19 @@ Created on Thu Nov 29 09:34:37 2018
 
 #Task 2
 
-age = 5
-age = "almost three"
-print (age)
+#age = 5
+#age = "almost three"
+#print (age)
+
+#Task 3
+
+print ("Bob " * 3)
+print ("Bob " + 3)
+print ("hello".upper())
+print ("GOODBYE".lower())
+
+
+#Inclass work
 
 #age = 5
 #age = "almost three"
