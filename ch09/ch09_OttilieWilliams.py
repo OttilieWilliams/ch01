@@ -61,8 +61,8 @@
 #x.sort()
 #print(x)
 
-#x = [7,11,3,9,2]
-#print(sorted(x, reverse=True))
+x = [7,11,3,9,2]
+print(sorted(x, reverse=True))
 
 #x = ['ab', 'cs', 'yw', 'zs', 'hd']
 #y = sorted(x)

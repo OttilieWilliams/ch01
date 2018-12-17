@@ -1,3 +1,7 @@
+#Object Orientated Programming and using Classes
+
+#In class example: 
+
 #class Customer(object):
 #     """A customer of ABC Bank with a checking account. Customers have the following properties:
 #     Attributes:
@@ -23,6 +27,10 @@
 #Bernie = Customer('Bernie Brown', 500.0)
 
 #Bernie = Customer ('Bernie Brown', 'Brown', 1000.0)
+
+#----------------------------------------------------------------------
+
+# My own idea: a system for employee annual leave and sick day calculations
 
 class employee(object):
      """Employees have the following properties:
@@ -73,6 +81,9 @@ Ben = restaurantEmployee('Ben')
 #Loren.useHolidayDays(10)
 #print(Loren.holidayDaysRemaining)
 
+#------------------------------------------------------------
+
+# More practice
 
 #import sys
 #

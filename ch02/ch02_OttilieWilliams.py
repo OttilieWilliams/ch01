@@ -5,6 +5,8 @@ Created on Thu Nov 29 09:34:37 2018
 @author: ottil
 """
 
+# Operations, strings and variables
+
 #Task 1
 
 #print (5 - 6)

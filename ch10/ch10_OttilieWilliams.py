@@ -16,10 +16,10 @@
 
 #------------------------------------------------------
 
-tel = {'Amanda':858, 'Loren':264, 'Mabel':914, 'Ottilie':344}
-tel['Ottilie'] = 8344 # this updates Ottilie's phone number
-
-tel['Ottilie'] += 10 # this adds 10 to Ottilie's phone number
+#tel = {'Amanda':858, 'Loren':264, 'Mabel':914, 'Ottilie':344}
+#tel['Ottilie'] = 8344 # this updates Ottilie's phone number
+#
+#tel['Ottilie'] += 10 # this adds 10 to Ottilie's phone number
 
 #del tel['Amanda'] # this deletes Amanda's phone number
 #tel.pop('Amanda') # this also deletes Amana

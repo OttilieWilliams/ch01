@@ -1,3 +1,12 @@
+
+
+# How to create a function
+
+# To work, a function needs:
+# - to start with 'Def'
+# - a unique name
+# - brackets and a colon right after the name
+
 def add_two_numbers(num1, num2): 
     answer = num1 + num2
     print ("{} plus {} equals {}".format(num1, num2, answer)) 
