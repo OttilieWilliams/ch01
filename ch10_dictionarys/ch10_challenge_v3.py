@@ -50,17 +50,17 @@ queenAge = 100
 
 #How many years does your age differ from the Queen's?
 
-#def add_classmate_info(phoneBook_dict):
-#    name = input('What is your name? ')
-#    phoneNo = input('What are the last 3 digits of your phone number? ') 
-#    luckyNo = input('What is your lucky number? ') 
-#    postCode = input('What is your postcode? ') 
-#    townOrCity = input('what is your home town or city? ')
-#    phoneBook_dict[name] = phoneNo, luckyNo, postCode, townOrCity, age
-#    return queen_age_difference()
+def add_classmate_info(phoneBook_dict):
+    name = input('What is your name? ')
+    phoneNo = input('What are the last 3 digits of your phone number? ') 
+    luckyNo = input('What is your lucky number? ') 
+    postCode = input('What is your postcode? ') 
+    townOrCity = input('what is your home town or city? ')
+    phoneBook_dict[name] = phoneNo, luckyNo, postCode, townOrCity, age
+    return queen_age_difference()
 
-#def queen_age_difference():
-#    age = int(input('What is your age? '))
-#    print(str('The queen has had ') + str(queenAge - age) + str(' more years on earth than you.'))
+def queen_age_difference():
+    age = int(input('What is your age? '))
+    print(str('The queen has had ') + str(queenAge - age) + str(' more years on earth than you.'))
     
 
