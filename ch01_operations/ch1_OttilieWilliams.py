@@ -19,6 +19,8 @@ F = str(6) + 'a'
 print (A) # this prints the variable A that was created to the console.
 print (B)
 
+print('hello world')
+
 # For a full list of functions look at the Learn Python
 #the hard way book.
 

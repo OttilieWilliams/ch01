@@ -17,8 +17,8 @@ Created on Tue Dec 18 14:49:25 2018
 attempts = 3 
 
 from random import randint
-def guess(attempts, range):
-    number = randint(1,range)
+def guess(attempts, endrange):
+    number = randint(1, endrange)
     print("Welcome! Can you guess my secret number?", "You have ", attempts, " guesses remaining.")
     while attempts > 0:
         guess = int(input('Make a guess: '))

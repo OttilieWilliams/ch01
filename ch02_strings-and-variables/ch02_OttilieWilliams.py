@@ -17,21 +17,26 @@ Created on Thu Nov 29 09:34:37 2018
 #print (2*(10 + 3))
 #print (2 ** 4)
 
+#----------------------------------------------------
+
 #Task 2
 
 #age = 5
 #age = "almost three"
 #print (age)
 
+#----------------------------------------------------
+
 #Task 3
 
-print ("Bob " * 3)
-print ("Bob " + 3)
-print ("hello".upper())
-print ("GOODBYE".lower())
+#print ("Bob " * 3)
+#print ("Bob " + 3)
+#print ("hello".upper())
+#print ("GOODBYE".lower())
 
+#----------------------------------------------------
 
-#Inclass work
+#Practice
 
 #age = 5
 #age = "almost three"
@@ -53,10 +58,15 @@ print ("GOODBYE".lower())
 #SplitStr = strExample.split()
 #print(SplitStr)
 
+#----------------------------------------------------
+
+# Task 4
+
 #age = 6
 #like = "painting"
 #age_description = "My age is {0} and I like {1}.".format(age,like)
 #print (age_description)
 
- 
+ #----------------------------------------------------
+
 

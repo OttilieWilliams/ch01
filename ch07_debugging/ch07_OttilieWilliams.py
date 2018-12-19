@@ -1,4 +1,11 @@
-# How to debug a programe
+
+#------------------------------------------------------------
+
+#CHAPTER 7 - Debugging
+
+#------------------------------------------------------------
+
+# Task 1: Using print to check data type
 
 # The following code will give an error.
 # Can you guess why? 
@@ -7,16 +14,16 @@
 #result = userInput - 2
 #print(result)
 
-#Try checking the data type of input.
-#Also, use the error message. It is often very 
-#informative.
+#Try checking the data type of input: 
 
 #userInput = input('please give a number ')
 #print(type(userInput))
 
 #You can see that the input function automatically
 #turns all input into a string. 
-#Therefore we need to turn it into an int:
+#Therefore we need to turn it into an int
+
+# Task 2: Converting str into an int.
 
 #userInput = int(input('please give a number '))
 #result = userInput - 2
@@ -24,26 +31,28 @@
 
 #------------------------------------------------
 
-#userInput = input('please give a number ')
-#
-#def simpleOperation(userInput):
-#    
-#    result = userInput - 2
-#    
-#    print(result)
+# Script 2 page 73 - Nested function:
 
-#def nestedOperation():
-#    
-#    result = simpleOperation(userInput)
-#    
-#    result2 = result * 2
-#    
-#    return result2
+userInput = input('please give a number ')
+
+def simpleOperation(userInput):
+    
+    result = userInput - 2
+    
+    print(result)
+
+def nestedOperation():
+    
+    result = simpleOperation(userInput)
+    
+    result2 = result * 2
+    
+    return result2
 
 # create a breakpoint by double clicking on the line
 # number. 
 
-#result = simpleOperation(userInput)
-#result2 = nestedOperation()
+result = simpleOperation(userInput)
+result2 = nestedOperation()
 
 #print(result2)

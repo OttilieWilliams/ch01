@@ -1,4 +1,8 @@
+#---------------------------------------------------
 
+# CHAPTER 3 - FUNCTION FILE
+
+#---------------------------------------------------
 
 # How to create a function
 
@@ -7,10 +11,25 @@
 # - a unique name
 # - brackets and a colon right after the name
 
+#---------------------------------------------------
+
+# Task 2: Writing a function
+
+#def hello_world():
+#    print("Hello World!")
+
+#---------------------------------------------------
+
+# Task 4: adding two numbers together
+
 def add_two_numbers(num1, num2): 
     answer = num1 + num2
     print ("{} plus {} equals {}".format(num1, num2, answer)) 
     return answer
+
+#---------------------------------------------------
+
+# Task 5: Temperature conversion 
 
 def convert_temperature(centigrade):
     fahrenheit = centigrade * 9.0 / 5.0 + 32

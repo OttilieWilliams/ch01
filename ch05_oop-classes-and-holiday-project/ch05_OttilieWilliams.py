@@ -1,6 +1,11 @@
-#Object Orientated Programming and using Classes
 
-#In class example: 
+#------------------------------------------------------------
+
+#CHAPTER 5 - Object Orientated Programming and using Classes
+
+#------------------------------------------------------------
+
+# Task 1: 
 
 #class Customer(object):
 #     """A customer of ABC Bank with a checking account. Customers have the following properties:
@@ -30,7 +35,9 @@
 
 #----------------------------------------------------------------------
 
-# My own idea: a system for employee annual leave and sick day calculations
+# Practice: My own idea:
+
+# A system for employee annual leave and sick day calculations
 
 class employee(object):
      """Employees have the following properties:
@@ -101,7 +108,11 @@ Ben = restaurantEmployee('Ben')
 #
 ##Sybil = Dog()
 ##Sybil.eat()
-#
+
+#------------------------------------------------------------
+
+# Task 2 
+
 #class Robot():
 #    def move(self):
 #        print('...move move move...')
@@ -109,11 +120,19 @@ Ben = restaurantEmployee('Ben')
 #class CleanRobot(Robot):
 #    def clean(self):
 #        print ('I vacuum dust')
-#          
+
+#------------------------------------------------------------
+
+# Task 3 
+          
 #class CookRobot(Robot):
 #    def cook(self):
 #        print ('I cook delicious food')
-#
+
+#------------------------------------------------------------
+
+# Task 4 
+
 #class SuperRobot():
 #    
 #    def __init__(self,name,age):
@@ -152,8 +171,10 @@ Ben = restaurantEmployee('Ben')
 
 #Jeeves = CookRobot()
 #Jeeves.cook()
-      
 
+#------------------------------------------------------------     
+
+# More practice
         
 #class LionPride():
 #    def __init__(self, name):
@@ -162,7 +183,6 @@ Ben = restaurantEmployee('Ben')
 #    def hunt(self):
 #        print ('chase')
 #        
-#    
 #class Lioness(LionPride):
 #    def __init__(self, name, roarNumber=0, biteNumber=0):
 #        self.roarNumber = roarNumber
@@ -173,7 +193,6 @@ Ben = restaurantEmployee('Ben')
 #        
 #    def bite(self):
 #        print('chomp!'*self.biteNumber)
-#    
 #    
 #class Cub(Lioness): 
 #    def play(self):
@@ -188,7 +207,6 @@ Ben = restaurantEmployee('Ben')
 #Simba.roar()
 #Simba.bite()
 #Simba.hunt()
-
 
 #Ernie = Cub
 #Ernie.roar()

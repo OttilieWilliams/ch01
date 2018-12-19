@@ -1,6 +1,13 @@
 
-#Practicing user input and functions
+#---------------------------------------------------
 
+#CHAPTER 3 - Practicing user input and functions
+
+#---------------------------------------------------
+
+# User input practice
+    
+# Task 1
 
 #print ("What's your name?")
 #name = input()
@@ -18,8 +25,15 @@
 
 #a = "please type your age: "
 
+#---------------------------------------------------
+# Task 2: Writing a function
+
 #def hello_world():
 #    print("Hello World!")
+
+#---------------------------------------------------
+
+# Practice
     
 #def introduce():
 #    name = input("What's your name? ")
