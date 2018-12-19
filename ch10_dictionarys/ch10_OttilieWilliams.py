@@ -7,15 +7,15 @@
 
 #Task 1: How to create them and amend them 
 
-salary = {} # this creates a dictionary called salary
+salary = {} # creates a dictionary called salary
 
 salary['al'] = 20500 # adds a key called al and assigns it the value 20500
 
 salary[7] = ('Joke', 'Chen', 'Bond') 
 
-salary[7] = ('Joke', 'Chen', 'Ben') # overwrites the values for the 7 key
+salary[7] = ('Joke', 'Chen', 'Ben') # updating the values
 
-print(salary['al']) #prints value through the key
+print(salary['al']) # retrieving the value
 
 print(salary) # prints the whole dictionary
 
