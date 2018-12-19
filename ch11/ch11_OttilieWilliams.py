@@ -1,40 +1,44 @@
 
-# While loops
+#---------------------------------------------------
+
+# CHAPTER 11- While loops
+
+#---------------------------------------------------
 
 #How to write a while loop:
 
 # while CONDITION:
     #(Indent) CODE-BLOCK
-    
 #------------------------------------
     
-# Example
+# Task 1
 
-#x = 33
-#
-#while x>= 1:
-#    print(x,':', end='')
-#    x = x/2
-#    
-#print(x)
+x = 33
 
-#------------------------------------
-
-#Creating triangular numbers:
-
-#n= 3
-#result = 0
-#
-#while n > 0:
-#    result = result + n
-#    n = n - 1
-#    
-#print(result)
+while x>= 1:
+    print(x,':', end='')
+    x = x/2
+    
+print(x)
 
 #------------------------------------
 
-#Challenge: create a system to advise pupils of whether they have
-#passed or failed. 
+#Task 2: Creating triangular numbers:
+
+n= 3
+result = 0
+
+while n > 0:
+    result = result + n
+    n = n - 1
+    
+print(result)
+
+#------------------------------------
+
+# Task 3:
+# Challenge: create a system to advise pupils of whether they have
+# passed or failed. 
     
 # VERSION 1
 
@@ -55,21 +59,21 @@
  
 #VERSION 2
 
-#didYouPass = 'Yes'
-#
-#while didYouPass == 'Yes':
-#
-#    mark = int(input('What is your pass? '))
-#    if mark >= 70:
-#        print('FIRST CLASS')
-#
-#    elif mark >= 40:
-#        print('PASS')
-#
-#    elif mark < 40:
-#        print('FAIL')
-#    
-#    didYouPass = input('Did you pass? ')
+didYouPass = 'Yes'
+
+while didYouPass == 'Yes':
+
+    mark = int(input('What is your pass? '))
+    if mark >= 70:
+        print('FIRST CLASS')
+
+    elif mark >= 40:
+        print('PASS')
+
+    elif mark < 40:
+        print('FAIL')
+    
+    didYouPass = input('Did you pass? ')
 
 #------------------------------------
 
@@ -107,14 +111,14 @@
     
 #------------------------------------
 
-# Practice: Write an application that prints a greeting for the
+# Task 4: Write an application that prints a greeting for the
 # name entered, until the user enters 'Done'. 
 
-#while True:
-#    name = input('What is your name? ')
-#    print(name)
-#    if name == 'Done':
-#        break
+while True:
+    name = input('What is your name? ')
+    print(name)
+    if name == 'Done':
+        break
 
 #------------------------------------
 

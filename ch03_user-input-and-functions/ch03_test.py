@@ -6,8 +6,9 @@
 
 # Task 1
 
-#print ("What's your name?")
-#name = input()
+print ("What's your name?")
+name = input()
+
 #print ("Hello {}!".format(name))
 #print (name.lower())
 

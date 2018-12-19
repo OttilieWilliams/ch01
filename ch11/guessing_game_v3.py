@@ -7,12 +7,12 @@ Created on Tue Dec 18 14:49:25 2018
 
 #VERSION 3 
 
-#Complete the game! It must:
-
 # Tell the player how many guesses they have left DONE
 # Read their guess DONE
 # Tell them if their guess is right DONE
 # If not, whether it is too low or too high DONE
+
+# Fixed it so it loops if you get it wrong. 
 
 attempts = 3 
 

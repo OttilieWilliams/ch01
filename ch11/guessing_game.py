@@ -19,7 +19,7 @@ Created on Tue Dec 18 11:56:25 2018
 
 #Complete the game! It must:
 
-# Tell the player how many guesses they have left
+# Tell the player how many guesses they have left NOT DONE
 # Read their guess DONE
 # Tell them if their guess is right DONE
 # If not, whether it is too low or too high DONE

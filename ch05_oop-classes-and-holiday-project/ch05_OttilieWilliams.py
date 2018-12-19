@@ -7,29 +7,29 @@
 
 # Task 1: 
 
-#class Customer(object):
-#     """A customer of ABC Bank with a checking account. Customers have the following properties:
-#     Attributes:
-#     name: A string representing the customer's name.
-#     balance: A float tracking the current balance of the customer's account.
-#     """
-#     def __init__(self, fullName, surname, balance=0.0):
-#         """Return a Customer object whose name is *name* and starting balance is *balance*."""
-#         self.fullName = fullName
-#         self.surname = surname
-#         self.balance = balance
-#     def withdraw(self, amount):
-#         """Return the balance remaining after withdrawing *amount* dollars."""
-#         if amount > self.balance:
-#             raise RuntimeError('Amount greater than available balance.')
-#         self.balance -= amount
-#         return self.balance  
-#     def deposit(self, amount):
-#         """Return the balance remaining after depositing *amount* dollars."""
-#         self.balance += amount
-#         return self.balance
+class Customer(object):
+     """A customer of ABC Bank with a checking account. Customers have the following properties:
+     Attributes:
+     name: A string representing the customer's name.
+     balance: A float tracking the current balance of the customer's account.
+     """
+     def __init__(self, fullName, surname, balance=0.0):
+         """Return a Customer object whose name is *name* and starting balance is *balance*."""
+         self.fullName = fullName
+         self.surname = surname
+         self.balance = balance
+     def withdraw(self, amount):
+         """Return the balance remaining after withdrawing *amount* dollars."""
+         if amount > self.balance:
+             raise RuntimeError('Amount greater than available balance.')
+         self.balance -= amount
+         return self.balance  
+     def deposit(self, amount):
+         """Return the balance remaining after depositing *amount* dollars."""
+         self.balance += amount
+         return self.balance
 
-#Bernie = Customer('Bernie Brown', 500.0)
+Bernie = Customer('Bernie Brown', 500.0)
 
 #Bernie = Customer ('Bernie Brown', 'Brown', 1000.0)
 
@@ -94,17 +94,17 @@ Ben = restaurantEmployee('Ben')
 
 #import sys
 #
-#class Animal():
-#    def __init__(self, name, age):
-#        self.name = name
-#        self.age = age
-#        
-#    def eat(self):
-#        print('nomnomnom')
-#        
-#class Dog(Animal): 
-#    def bark(self):
-#        print('Woof!')
+class Animal():
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        
+    def eat(self):
+        print('nomnomnom')
+        
+class Dog(Animal): 
+    def bark(self):
+        print('Woof!')
 #
 ##Sybil = Dog()
 ##Sybil.eat()
@@ -113,47 +113,47 @@ Ben = restaurantEmployee('Ben')
 
 # Task 2 
 
-#class Robot():
-#    def move(self):
-#        print('...move move move...')
-#        
-#class CleanRobot(Robot):
-#    def clean(self):
-#        print ('I vacuum dust')
+class Robot():
+    def move(self):
+        print('...move move move...')
+        
+class CleanRobot(Robot):
+    def clean(self):
+        print ('I vacuum dust')
 
 #------------------------------------------------------------
 
 # Task 3 
           
-#class CookRobot(Robot):
-#    def cook(self):
-#        print ('I cook delicious food')
+class CookRobot(Robot):
+    def cook(self):
+        print ('I cook delicious food')
 
 #------------------------------------------------------------
 
 # Task 4 
 
-#class SuperRobot():
-#    
-#    def __init__(self,name,age):
-#        self.name = name
-#        self.age = age
-#        
-#        self.o1 = Robot()
-#        self.o2 = Dog(name,age)
-#        self.o3 = CleanRobot()
-#        self.o4 = CookRobot()
-#        
-#    def playGame(self):
-#        print('alphago game')
-#    def move(self):
-#        return self.o1.move()
-#    def bark(self):
-#        return self.o2.bark()
-#    def clean(self):
-#        return self.o3.clean()
-#    def cook(self):
-#        return self.o4.cook() 
+class SuperRobot():
+    
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+        
+        self.o1 = Robot()
+        self.o2 = Dog(name,age)
+        self.o3 = CleanRobot()
+        self.o4 = CookRobot()
+        
+    def playGame(self):
+        print('alphago game')
+    def move(self):
+        return self.o1.move()
+    def bark(self):
+        return self.o2.bark()
+    def clean(self):
+        return self.o3.clean()
+    def cook(self):
+        return self.o4.cook() 
 #
 #name = input('pet\'s name:')
 #age = int(input('pet\'s age: '))
@@ -161,9 +161,9 @@ Ben = restaurantEmployee('Ben')
 #name = sys.argv[1] #input('pet\'s name: ')
 #age = sys.argv[2] #int(input('pet\'s age: '))
 #
-#Martin = SuperRobot('Snoopy',7)
-#Martin.bark()
-#Martin.cook()
+Martin = SuperRobot('Snoopy',7)
+Martin.bark()
+Martin.cook()
 #     
 #automatic = SuperRobot(name, age)
 #print (automatic.name)

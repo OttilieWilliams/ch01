@@ -9,27 +9,28 @@
     
 # Task 1
 
-#print ("What's your name?")
-#name = input()
-#print ("Hello {}!".format(name))
-#print (name.lower())
+print ("What's your name?")
+name = input()
+print ("Hello {}!".format(name))
 
+#print (name.lower())
+#
 #name = input("What's your name? ")
 #print ("Hello {}!".format(name.upper()))
-
+#
 #age = input("What's your age? ")
 #print ("Wow, you're {} years old!".format(age))
 #
 #city = input("What's your city? " )
 #print ("Gosh, you're from {}!".format(city))
-
-#a = "please type your age: "
+#
+##a = "please type your age: "
 
 #---------------------------------------------------
 # Task 2: Writing a function
 
-#def hello_world():
-#    print("Hello World!")
+def hello_world():
+    print("Hello World!")
 
 #---------------------------------------------------
 

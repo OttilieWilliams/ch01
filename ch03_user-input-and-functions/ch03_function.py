@@ -1,6 +1,6 @@
 #---------------------------------------------------
 
-# CHAPTER 3 - FUNCTION FILE
+# CHAPTER 3 - functions
 
 #---------------------------------------------------
 
@@ -15,8 +15,8 @@
 
 # Task 2: Writing a function
 
-#def hello_world():
-#    print("Hello World!")
+def hello_world():
+    print("Hello World!")
 
 #---------------------------------------------------
 

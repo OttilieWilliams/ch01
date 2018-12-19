@@ -12,7 +12,7 @@ def DataBundlePurchase(truePasscode,balance):
             if checkMobileNumber() == True:
                 print("Thank you. We have stored your mobile number.")
                 chooseDataBundle(balance)
-                return 'Customer decides to buy data bundle.'
+                return 'Customer has completed data transaction'
         else:
             return ('Error')
     else:
@@ -44,27 +44,11 @@ def chooseDataBundle(balance):
     elif (dataBundleChoice/5).is_integer():
         balance = round(balance - dataBundleChoice,3) 
         print('You have successfully bought £' + str(dataBundleChoice) + ' worth of data. You have £' + str(balance) + ' left in your balance.')
-        return 'New balance is ' + str(balance)
+        return 'New balance is ' + str(balance) + 'Customer decides to buy data bundle.'
     else:
         print('You must enter a multiple of 5. Please try again.')
-        return 'Customer did not enter a multiple of 5.'
+        return 'Customer did not enter a multiple of 5.' 
 
 
 
-#(dataBundleChoice % 5) == 0:
 
-
-# (int(dataBundleChoice)/5) == int:
-        
-        
-#    if balance > 0:
-#        return True
-#    else:
-#        return False
-# 
-#        if checkBalance(balance) == True:
-#            return ('Your balance is {}'
-#                    .format(balance))
-#        else:
-#            return ('Your balance is not sufficient: {}'
-#                    .format(balance))
