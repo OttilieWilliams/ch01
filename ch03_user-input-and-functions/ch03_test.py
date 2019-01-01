@@ -4,7 +4,7 @@
 
 #---------------------------------------------------
 
-# Task 1
+# Task 1: Input from a user
 
 print ("What's your name?")
 name = input()

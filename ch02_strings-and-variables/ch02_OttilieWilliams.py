@@ -7,7 +7,7 @@ Created on Thu Nov 29 09:34:37 2018
 
 # Operations, strings and variables
 
-#Task 1
+#Task 1 - Simple Operations
 
 print (5 - 6)
 print (8 * 9)
@@ -19,7 +19,7 @@ print (2 ** 4)
 
 #----------------------------------------------------
 
-#Task 2
+#Task 2 - Variable practice
 
 age = 5
 age = "almost three"
@@ -27,7 +27,7 @@ print (age)
 
 #----------------------------------------------------
 
-#Task 3
+#Task 3 - Basic string manipulation
 
 print ("Bob " * 3)
 #print ("Bob " + 3)
@@ -60,7 +60,7 @@ print ("GOODBYE".lower())
 
 #----------------------------------------------------
 
-# Task 4
+# Task 4 - Formatting
 
 age = 6
 like = "painting"

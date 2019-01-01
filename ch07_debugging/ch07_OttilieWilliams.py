@@ -53,3 +53,17 @@ result2 = nestedOperation()
 print(result2)
 
 #print(result2)
+
+# Buttons: 
+
+#  - first - runs your code until the break point.
+#  - second - runs the code line-by-line, until the breakpoint.
+#  - third - steps into the sections (class and functions). 
+#  - fourth - steps out - for when you feel the error is not related to the current section.
+#  - fifth - to go to the next breakpoint.
+#  - last - square shaped button is to exit debugging mode and go back to normal coding mode.
+
+
+
+
+

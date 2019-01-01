@@ -4,10 +4,10 @@
 #CHAPTER 3 - Practicing user input and functions
 
 #---------------------------------------------------
-
-# User input practice
     
-# Task 1
+# Task 1: Input from user
+
+# (Tasks 2, 4 and 5 in ch03_function.py)
 
 print ("What's your name?")
 name = input()

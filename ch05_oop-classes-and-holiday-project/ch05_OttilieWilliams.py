@@ -5,7 +5,7 @@
 
 #------------------------------------------------------------
 
-# Task 1: 
+# Task 1: Using classes
 
 class Customer(object):
      """A customer of ABC Bank with a checking account. Customers have the following properties:
@@ -111,7 +111,7 @@ class Dog(Animal):
 
 #------------------------------------------------------------
 
-# Task 2 
+# Tasks 2 and 3: Using inheritance
 
 class Robot():
     def move(self):
@@ -120,10 +120,6 @@ class Robot():
 class CleanRobot(Robot):
     def clean(self):
         print ('I vacuum dust')
-
-#------------------------------------------------------------
-
-# Task 3 
           
 class CookRobot(Robot):
     def cook(self):
@@ -131,7 +127,7 @@ class CookRobot(Robot):
 
 #------------------------------------------------------------
 
-# Task 4 
+# Task 4: Using Association
 
 class SuperRobot():
     

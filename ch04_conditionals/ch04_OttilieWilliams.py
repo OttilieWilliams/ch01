@@ -5,7 +5,7 @@
 
 #---------------------------------------------------
 
-# Task 3: using conditional statements
+# Task 3: IF statements
 
 #number = input ("Enter a number between 1 and 10: ")
 #number = int(number) # Converts the input to an integer
@@ -18,7 +18,7 @@
 
 #---------------------------------------------------
 
-# Task 4: using else statements
+# Task 4: ELSE statements
     
 number = input ("Enter a number between 1 and 10: ")
 number = int(number) # Converts the input to an integer
@@ -42,7 +42,7 @@ else:
 
 #---------------------------------------------------
 
-# Task 5: Using elif statements
+# Task 5: ELIF statements
 
 age = input("Enter your age here: ")
 age = int(age)

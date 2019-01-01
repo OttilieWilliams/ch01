@@ -20,7 +20,7 @@ def hello_world():
 
 #---------------------------------------------------
 
-# Task 4: adding two numbers together
+# Task 4: Return function
 
 def add_two_numbers(num1, num2): 
     answer = num1 + num2

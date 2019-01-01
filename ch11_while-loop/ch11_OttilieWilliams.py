@@ -18,17 +18,17 @@ x = 33
 while x>= 1:
     print(x,':', end='')
     x = x/2
-    
+     
 print(x)
 
 #------------------------------------
 
-#Task 2: Creating triangular numbers:
+#Task 2: Creating triangular numbers
 
-n= 3
+n= 5
 result = 0
 
-while n > 0:
+while n > 0:    
     result = result + n
     n = n - 1
     
