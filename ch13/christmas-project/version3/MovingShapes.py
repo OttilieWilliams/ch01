@@ -6,14 +6,14 @@ Created on Wed Dec 19 20:08:29 2018
 """
 
 from shape import *
-from pylab import random as r
+import random
 
 class MovingShape(object):
-    def __init__(self,frame,shape,diameter):
-        self.x = 0
-        self.y = 0
-        self.dx = 5 + 10 * r()
-        self.dy = 5 + 10 * r()
+    def __init__(self,frame,shape,diameter):        
+        self.x = random.randint(50, 750)
+        self.y = random.randint(50, 550)
+        self.dx = random.randint(-15,15) 
+        self.dy = random.randint(-15,15) 
         self.shape = shape
         self.diameter = diameter
         self.ﬁgure = Shape(shape,diameter)
@@ -22,7 +22,7 @@ class MovingShape(object):
     def moveTick(self):
         self.x = self.x + self.dx
         self.y = self.y + self.dy
-        self.goto(self.x, self.y) 
+        self.figure.goto(self.x, self.y) 
 
 class Square(MovingShape):
     def __init__(self,frame,diameter):
