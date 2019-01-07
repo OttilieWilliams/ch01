@@ -19,17 +19,19 @@ class MovingShape(object):
         self.ﬁgure = Shape(shape,diameter)
     def goto(self,x,y):
         self.ﬁgure.goto(self.x, self.y)
-    def moveTick(self):
+    def moveTick(self):  
         self.x = self.x + self.dx
         self.y = self.y + self.dy
-        if self.x <= 50:
+        if self.x < 50:
             self.x = self.x - self.dx
-        elif self.x >= 750:
+        elif self.x > 750:
             self.x = self.x - self.dx
-        elif self.y <= 50:
+        elif self.y < 50:
             self.y = self.y - self.dy
-        elif self.y >= 750:
+        elif self.y > 550:
             self.y = self.y - self.dy
+        else:
+            pass
         
         self.figure.goto(self.x, self.y)
 

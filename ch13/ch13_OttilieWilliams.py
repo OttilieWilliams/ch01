@@ -5,7 +5,7 @@ Created on Thu Dec 20 15:11:59 2018
 @author: ottil
 """
 
-#Task 1
+#Task 1 - Initialise person class
 
 class Person:
     def __init__(self, name, age, gender):
@@ -19,7 +19,7 @@ class Person:
         else:
             print('Gender not recognised!')
 
-# Task 2
+# Task 2 - More functionalities for person class
 
     def greetingInformal(self):
         print('Hi', self.name)
@@ -30,7 +30,7 @@ class Person:
         else:
             print('Welome, Ms ', self.name)
             
-# Task 3
+# Task 3 - Greeting filter
             
     def greetingAgeBased(self): 
         if self.age > 60: 
@@ -40,7 +40,7 @@ class Person:
         else:
             self.greetingFormal()
             
-# Task 4
+# Task 4 - subclass - wizard
 
 #class Wizard(Person):
 #    def __init__(self,name,age):
@@ -51,7 +51,7 @@ class Person:
 #        print("Welcome, Mr ", self.name, end=" ")
 #        print("- you're a fine wizard!")
         
-# Task 5 and 6
+# Task 5 and 6 - redefine __init__ and create new methods for wizard
             
 class Wizard(Person):
     def __init__(self,name,age, gender =''): 
