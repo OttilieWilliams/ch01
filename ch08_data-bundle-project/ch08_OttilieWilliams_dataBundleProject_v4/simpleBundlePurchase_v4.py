@@ -4,17 +4,29 @@ Creating an empty function
 def initiateTransaction(truePasscode, balance):
     for x in range(1,4):
         if passwordCheck(truePasscode, balance) == False:
-            print("Incorrect password")
+            return ("User has entered incorrect password")
         else:
             transactionType(balance)
             return("Customer has completed transaction")
-        
+
 def passwordCheck(truePasscode, balance):
     attempt = input('Please enter your password ')
     if attempt == truePasscode:
         return True
     else:
+        print("Incorrect password")
         return False
+    
+def passwordCheckAgain(truePasscode,balance):
+    if passwordCheck(truePasscode, balance):
+        return True 
+    print("\n Please try again (second attempt).")
+    if passwordCheck(truePasscode, balance):
+        return True 
+    print("\n Please try again (final attempt).")
+    if passwordCheck(truePasscode, balance):
+        return True 
+    return False
 
 def transactionType(balance):
     transactionTypeCheck = input("Enter 1 to Check balance, or 2 to Purchase a data bundle: ")

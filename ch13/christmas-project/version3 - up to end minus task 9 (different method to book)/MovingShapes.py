@@ -21,7 +21,7 @@ class MovingShape(object):
         self.ﬁgure.goto(self.x, self.y)
     def moveTick(self):
         self.x = self.x + self.dx
-        self.y = self.y + self.dy
+        self.y = self.y + self.dy            
         self.figure.goto(self.x, self.y) 
 
 class Square(MovingShape):
