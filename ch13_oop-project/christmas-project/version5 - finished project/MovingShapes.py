@@ -16,18 +16,21 @@ class MovingShape(object):
         self.shape = shape
         self.ﬁgure = Shape(shape,diameter)
         
+        # Variable to be used to stop shapes going beyond border
         self.minx = self.diameter/2
         self.maxx = frame.width - self.minx
-        
         self.miny = self.diameter/2
         self.maxy = frame.height - self.miny
         
+        # Starting positions for x and y
         self.x = random.randint(self.minx, self.maxx)
         self.y = random.randint(self.miny, self.maxy)
         
+        #An alternative solution for the above code.
 #        self.x = self.minx + r() * (self.maxx - self.minx) 
 #        self.y = self.miny + r() * (self.maxy - self.miny)
         
+        # Variable to determine velocity
         self.dx = 5 + 10 * r()
         self.dy = 5 + 10 * r()  
 
@@ -35,14 +38,19 @@ class MovingShape(object):
         self.ﬁgure.goto(self.x, self.y)
         
     def moveTick(self):
+    # a list of ifs for if the shape hits one of the four walls.
+        
         if self.x > self.maxx:
-            self.dx = -self.dx
-        elif self.x < self.minx:
-            self.dx = -self.dx
-        elif self.y > self.maxy:
-            self.dy = -self.dy
-        elif self.y < self.miny:
-            self.dy = self.dy
+            self.dx = self.dx * -1
+            
+        if self.x < self.minx:
+            self.dx = self.dx * -1
+            
+        if self.y > self.maxy:
+            self.dy = self.dy * -1
+            
+        if self.y < self.miny:
+            self.dy = self.dy * -1
             
         self.x = self.x + self.dx
         self.y = self.y + self.dy

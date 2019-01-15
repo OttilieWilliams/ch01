@@ -1,0 +1,3 @@
+either 2 or 3 tables (business, personal, and possibly one for geolocation) 
+api connection
+all functions

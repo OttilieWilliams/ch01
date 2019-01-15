@@ -30,6 +30,8 @@ class Customer(object):
          return self.balance
 
 Bernie = Customer('Bernie Brown', 500.0)
+Susie = Customer('Bernie Brown', 500.0)
+print(Bernie == Susie)
 
 #Bernie = Customer ('Bernie Brown', 'Brown', 1000.0)
 
