@@ -1,0 +1,12 @@
+FLASK
+
+app = Flask(__name__)
+
+__name__ is a magic method. 
+
+if __name__ == "main":
+	app.run(debug=True)
+
+Usually called main. 
+
+Netflix uses flask. 

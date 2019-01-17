@@ -1,0 +1,4 @@
+An API gets data from a database on a server and brings it to you in JSON format.
+
+JSON data always in quotation marks.
+

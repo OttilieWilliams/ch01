@@ -7,6 +7,8 @@ Created on Wed Jan  9 09:29:00 2019
 
 import sqlite3
 
+# TASK 1: CREATE TABLE AND INSERT DATA
+
 conn = sqlite3.connect('task1.db') 
 # This connects to the database.
 

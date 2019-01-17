@@ -38,7 +38,8 @@ def data_entry():
 #create_table()
 #data_entry()
 
-# function to insert data
+# TASK 2: INSERT DATA AUTOMATICALLY WITH VARIABLES
+
 def dynamic_data_entry():
     unix = time.time()
     date = str(datetime.datetime.fromtimestamp(unix).strftime('%Y-%m-%d %H:%M:%S'))
@@ -55,6 +56,7 @@ for i in range(10):
 #c.close()
 #conn.close()
 
+#TASK 3: READ/SELECT FROM DATABASE
 
 #def read_from_db_all():
 #    c.execute('SELECT * FROM stuffToBuild WHERE value =8')
@@ -67,6 +69,8 @@ def read_from_db_all():
     c.execute('SELECT * FROM stuffToBuild WHERE value =8')
     for row in c.fetchall():
         print(row)
+
+# Task 3 extended
         
 def read_from_db2():
     x = []

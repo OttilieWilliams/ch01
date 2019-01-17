@@ -1,0 +1,24 @@
+FLASK
+
+Use it to create a server. Uses port and URL. 
+
+Useful for if user is making requests for data. E.g. phonebook taking data out. 
+
+Netflix, airbnb, lift, uber, patrion uses flask. 
+
+ctrl + shift forces things to re-load.
+
+Get request:
+everytime you go on netflix, you are making a get request.
+
+Post resquest:
+everytime you send off data. E.g. send a message on facebook. 
+
+** Kwargs 
+This means, as many keywords as you want.
+
+E.g.
+
+def function(**kwargs)
+
+JINJA

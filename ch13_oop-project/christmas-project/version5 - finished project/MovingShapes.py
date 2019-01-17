@@ -33,7 +33,17 @@ class MovingShape(object):
         # Variable to determine velocity
         self.dx = 5 + 10 * r()
         self.dy = 5 + 10 * r()  
-
+    
+#        self.starting_direction()
+#
+#    def starting_direction():
+#        if r() < 0.5:
+#            self.dx = -self.dx
+#            self.dy = -self.dy
+#        else:
+#            self.dx= self.dx
+#            self.dy = self.dy
+    
     def goto(self,x,y):
         self.ﬁgure.goto(self.x, self.y)
         
@@ -51,11 +61,13 @@ class MovingShape(object):
             
         if self.y < self.miny:
             self.dy = self.dy * -1
-            
+           
         self.x = self.x + self.dx
         self.y = self.y + self.dy
         
         self.ﬁgure.goto(self.x, self.y)
+        
+
             
 class Square(MovingShape):
     def __init__(self,frame,diameter):
@@ -65,6 +77,13 @@ class Square(MovingShape):
 class Diamond(MovingShape):
      def __init__(self,frame,diameter):
         MovingShape.__init__(self,frame,'diamond',diameter)
+        self.minx = diameter #07/9
+        self.miny = diameter #07/9
+        self.maxx = frame.width - diameter #07/9
+        self.maxy = frame.height- diameter #07/9
+        self.x = self.minx + r() * (self.maxx - self.minx) #07/9
+        self.y = self.miny + r() * (self.maxy - self.miny) #07/9
+        self.goto(self.x, self.y)
         
 
 class Circle(MovingShape):

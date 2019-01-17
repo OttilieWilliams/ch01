@@ -9,51 +9,68 @@ import sqlite3
 import json 
 import requests
 
-conn = sqlite3.connect('phonebook_postcodes.db') 
+
+conn = sqlite3.connect('phonebook.db') 
 # This connects to the database.
 
 c = conn.cursor()
 # link your database with cursor.
 
+
+# CREATING THE POSTCODE DATABASE
+
 def create_table():
-    c.execute('''CREATE TABLE IF NOT EXISTS phonebook_postcodes (
-            postcode TEXT, 
-            longitude REAL, 
-            latitude REAL)''')
+    c.execute('''CREATE TABLE IF NOT EXISTS postcodes (postcode TEXT, longitude REAL, latitude REAL)''')
+    
 
-with open('personal_database_json.js') as f:
-    data = json.load(f)
-
+# ADDING ALL THE POSTCODES FROM THE PERSONAL DATABASE
 def personal_postcode_data_entry():
-    for item in data:
-        values_list = list(item.values())
-        postcode = values_list[5]
-        c.execute('''INSERT INTO phonebook_postcodes (postcode)
-                  VALUES(?)''', (postcode,))
-        conn.commit()
-        
-with open('business_database_json.js') as f:
-    data = json.load(f)
+    c.execute('''SELECT postcode FROM personal''')
+    for row in c.fetchall():
+        current_postcode = row[0]
+        c.execute('''SELECT * FROM postcodes WHERE postcode = ? ''', (current_postcode,))
+        results = c.fetchall()
+        if len(results) < 1:
+            endpoint_postcode = "https://api.postcodes.io/postcodes/"
+            postcode = current_postcode.replace(' ', '')
+            response = requests.get(endpoint_postcode + postcode)
+            data_postcode = response.json()
+            if response.status_code == 200:
+                print(data_postcode['result']['longitude'], data_postcode['result']['latitude'])
+                lat = data_postcode['result']['latitude']
+                lng = data_postcode['result']['longitude']
+                c.execute('''INSERT INTO postcodes (postcode, longitude, latitude) VALUES(?, ?, ?)''', (current_postcode, lng, lat, ))
+                conn.commit()
+        else:
+            print('got it already')
+    
+# ADDING ALL THE POSTCODES FROM THE BUSINESS DATABASE
 
 def business_postcode_data_entry():
-    for item in data:
-        values_list = list(item.values())
-        postcode = values_list[4]
-        c.execute('''INSERT INTO phonebook_postcodes (postcode)
-                  VALUES(?)''', (postcode,))
-        conn.commit()
-
-def convert_postcode():
-    response = requests.get("https://api.postcodes.io")
-    print(response.status_code)
+    c.execute('''SELECT postcode FROM business''')
+    for row in c.fetchall():
+        current_postcode = row[0]
+        c.execute('''SELECT * FROM postcodes WHERE postcode = ? ''', (current_postcode,))
+        results = c.fetchall()
+        if len(results) < 1:
+            endpoint_postcode = "https://api.postcodes.io/postcodes/"
+            postcode = current_postcode.replace(' ', '')
+            response = requests.get(endpoint_postcode + postcode)
+            data_postcode = response.json()
+            if response.status_code == 200:
+                print(data_postcode['result']['longitude'], data_postcode['result']['latitude'])
+                lat = data_postcode['result']['latitude']
+                lng = data_postcode['result']['longitude']
+                c.execute('''INSERT INTO postcodes (postcode, longitude, latitude) VALUES(?, ?, ?)''', (current_postcode, lng, lat, ))
+                conn.commit()
+        else:
+            print('got it already')
+    
     
 
-#postcode = requests.get(https://api.postcodes.io/postcodes/:cb1 1eg)
 
-#def postcode_data_entry():
-#    c.execute('''SELECT postcode
-#              FROM phonebook-business.db INNER JOIN phonebook-personal.db 
-#              ON postcode = postcode ''')
-#    conn.commit()
-    
-    
+              
+              
+              
+
+

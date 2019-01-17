@@ -8,29 +8,29 @@ Created on Wed Jan  9 15:14:30 2019
 import sqlite3
 import json 
 
-conn = sqlite3.connect('phonebook_business.db') 
+conn = sqlite3.connect('phonebook.db') 
 # This connects to the database.
 
 c = conn.cursor()
 # link your database with cursor.
 
 def create_table():
-    c.execute('CREATE TABLE IF NOT EXISTS phonebook_business (business_name TEXT, addressline1 TEXT, addressline2 TEXT, addressline3 TEXT, postcode TEXT, country TEXT, telephone_number REAL, business_type TEXT)')
+    c.execute('CREATE TABLE IF NOT EXISTS business (business_name TEXT, addressline1 TEXT, addressline2 TEXT, addressline3 TEXT, postcode TEXT, country TEXT, telephone_number REAL, business_type TEXT)')
  
-with open('business_database_json.js') as f:
-    data = json.load(f)
 
 def business_data_entry():
-    for item in data:
-        values_list = list(item.values())
-        c.execute('''INSERT INTO phonebook_business(business_name, addressline1, addressline2, addressline3, postcode, country, telephone_number, business_type)
-                  VALUES(?,?,?,?,?,?,?,?)''', (values_list))
-        conn.commit()
+    with open('business_database_json.js') as f:
+        data = json.load(f)
+        for item in data:
+            values_list = list(item.values())
+            c.execute('''INSERT INTO business(business_name, addressline1, addressline2, addressline3, postcode, country, telephone_number, business_type)
+                      VALUES(?,?,?,?,?,?,?,?)''', (values_list))
+            conn.commit()
 
 def find_data_for_business_name_and_location():
     business_name = input('Please search by business name: ')
     addressline2 = input('Please search by city, town or village: ')
-    c.execute('SELECT * FROM phonebook_business WHERE business_name = ? and addressline2 = ? ', (business_name.title(),addressline2.title(),))
+    c.execute('SELECT * FROM business WHERE business_name = ? and addressline2 = ? ', (business_name.title(),addressline2.title(),))
 
     results = c.fetchall()
     if results: # (means if results == true)
@@ -42,8 +42,11 @@ def find_data_for_business_name_and_location():
     else:
         print('Business not found.')
 
+
 find_data_for_business_name_and_location()
 
+#create_table()
+#business_data_entry()
 
 
 

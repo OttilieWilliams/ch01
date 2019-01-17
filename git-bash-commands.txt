@@ -1,0 +1,30 @@
+Git bash commands:
+Curl:
+
+	curl https://www.google.com
+
+This will give you the raw data from google. 
+
+Cat:
+
+	cat requirements.txt
+
+This will read the file. 
+
+History:
+
+	history
+
+Will give you a list of all the commands you have made in the last week.
+
+Man:
+
+	man COMMAND(e.g. reset)
+
+This is short for manual and will give you a short prompt on that command.
+
+Help:
+
+	help
+
+This lists all the commands available. 
