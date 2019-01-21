@@ -127,13 +127,13 @@ else:
 
 #counts = {'a':3, 'c':1, 'b':5}
 #labels = list(counts.values())
-#
+
 #print(counts['a']) 
 #print(sorted(counts.items(), key=lambda kv: kv[1])) 
 
-#counts = {'a':3, 'c':1, 'b':5}
-#labels = list(counts.values()) 
-#print(sorted(counts.items(), key=lambda kv: kv[1])) 
+counts = {'a':3, 'c':1, 'b':5}
+labels = list(counts.values()) 
+print(sorted(counts.items(), key=lambda kv: kv[1])) 
 
 
 #Example
@@ -146,25 +146,25 @@ else:
 
 #------------------------------------------------------
 
-# Task 7: Sorting dictionary values in descending order 
-
+## Task 7: Sorting dictionary values in descending order 
+#
 densities = {'iron':7.8, 'gold':19.3, 'zinc':7.13, 'lead':11.4}
 metals = list(densities.keys())
 metals.sort(reverse=True,key=lambda m:densities[m])  # this sorts them by 
 # value, in descending order.
-print(metals)
+#print(metals)
 print(sorted(densities.items(), key=lambda kv: kv[1],reverse=True)) 
 # This does the same but prints the whole key out.
-
-# Task 8:
-# Add two more values to each key, and ten sort the dictionary's 2nd 
-# value in descending order. Do this using both methods used above.
-
-densities = {'iron':(7.8, 200,3), 'gold':(19.3, 1000, 0), 'zinc':(7.13,500, 80), 'lead':(11.4, 1,50)}
-metals = list(densities.keys())
-metals.sort(reverse=True,key=lambda m:densities[m][1])
-print(metals)  
-print(sorted(densities.items(), key=lambda kv: kv[1][1],reverse=True))
+#
+## Task 8:
+## Add two more values to each key, and ten sort the dictionary's 2nd 
+## value in descending order. Do this using both methods used above.
+#
+#densities = {'iron':(7.8, 200,3), 'gold':(19.3, 1000, 0), 'zinc':(7.13,500, 80), 'lead':(11.4, 1,50)}
+#metals = list(densities.keys())
+#metals.sort(reverse=True,key=lambda m:densities[m][1])
+#print(metals)  
+#print(sorted(densities.items(), key=lambda kv: kv[1][1],reverse=True))
 
 
 
