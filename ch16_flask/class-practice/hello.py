@@ -5,12 +5,16 @@ Created on Wed Jan 16 09:29:33 2019
 @author: ottil
 """
 
+#TASK 1: BUILD SIMPLE WEB APP
+
 from flask import Flask, render_template, request
 # Importing flask
 
 app = Flask("MyApp")
 # Creating a flask object called app. Passing it one parameter,
 # "my app"
+
+#TASK 2: USE ROUTES AND DECORATORS
 
 @app.route("/")
 # This is a decorator (python syntax). Syntactic sugar.
@@ -24,8 +28,12 @@ def hello():
 @app.route("/<name>") # name is a variable
 #whatever you pass in after the / becomes a variable called name.
 
+#TASK 3: USE RENDER TEMPLATE
+
 def hello_someone(name):
     return render_template("hello.html")
+
+#TASK 4: USE VARIABLES
 
 @app.route("/lastname/<lastname>") 
 

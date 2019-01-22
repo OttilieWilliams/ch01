@@ -24,6 +24,8 @@ def index():
 #    print (form_data["email"])
 #    return "All ok"
 
+#TASK 5: GET EMAIL ADDRESS FROM USER
+
 @app.route("/confirmation", methods=["POST"])
 def confirmation():
     form_data = request.form
