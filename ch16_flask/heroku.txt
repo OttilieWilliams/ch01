@@ -1,0 +1,7 @@
+To create an app in heroku:
+
+- heroku create
+- git add .
+- git commit -m "initial commit"
+- git push heroku master
+- heroku open
